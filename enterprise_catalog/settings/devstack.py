@@ -63,9 +63,7 @@ ECOMMERCE_BASE_URL = 'http://edx.devstack.ecommerce:18130'
 LICENSE_MANAGER_BASE_URL = 'http://license-manager.app:18170'
 
 CELERY_WORKER_HIJACK_ROOT_LOGGER = True
-CELERY_TASK_ALWAYS_EAGER = (
-    os.environ.get("CELERY_ALWAYS_EAGER", "false").lower() == "true"
-)
+CELERY_TASK_ALWAYS_EAGER = True
 
 CORS_ORIGIN_WHITELIST = [
     # Enterprise learner portal MFE
